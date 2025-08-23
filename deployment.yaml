@@ -19,7 +19,7 @@ spec:
       - name: grade-submission-api
         image: ghcr.io/aaboelala/k8s_cicd:f10d31821acccd62f000b20e6f40bd7dc94e848c
         ports:
-        - containerPort: 3000
+        - containerPort: 5000
         resources:
           limits:
             memory: "256Mi"
@@ -38,5 +38,5 @@ spec:
     app: grade-submission-api
   ports:
   - port: 80
-    targetPort: 3000
+    targetPort: 5000
   type: ClusterIP
